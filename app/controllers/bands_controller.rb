@@ -5,7 +5,7 @@ class BandsController < ApplicationController
   def index
     @bands = Band.all
 
-    render json: @bands
+    render json: @bands, except: [:created_at, :updated_at]
   end
 
   # GET /bands/1

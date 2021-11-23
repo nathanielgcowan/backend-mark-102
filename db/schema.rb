@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_22_141506) do
+ActiveRecord::Schema.define(version: 2021_11_23_154519) do
 
   create_table "bands", force: :cascade do |t|
     t.string "chord"
@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2021_11_22_141506) do
     t.string "genre"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "likes", default: 0
     t.string "name"
+    t.integer "likes"
   end
 
 end
